@@ -3,20 +3,20 @@ import { LogoText } from "./icons/LogoText";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#F0F0F0] px-4 py-4 sm:px-8 sm:py-5 lg:px-28 lg:py-6">
+    <footer className="border-t border-[#ffffff23] px-4 py-4 sm:px-8 sm:py-5 lg:px-28 lg:py-6">
       <div className="mx-auto h-full w-full">
         <div className="flex w-full flex-col gap-4 sm:flex-row sm:items-end sm:justify-between sm:gap-0">
           <div className="flex flex-col gap-3 sm:gap-4 lg:gap-6">
             <div className="flex flex-col gap-1">
-              <p className="text-gray-blue text-xs font-normal sm:text-sm">
+              <p className="text-white text-xs font-normal sm:text-sm">
                 Developed by Team ColorBrush
               </p>
-              <p className="text-gray-blue text-xs font-normal sm:text-sm">
+              <p className="text-white text-xs font-normal sm:text-sm">
                 Contributors: 윤수호, 김연진, 윤혜성, 이준희, 노하영
               </p>
             </div>
 
-            <p className="text-gray-blue text-xs font-normal sm:text-sm">
+            <p className="text-gray-100 text-xs font-normal sm:text-sm">
               Copyright© 2025. colbrush. All rights reserved.
             </p>
           </div>
