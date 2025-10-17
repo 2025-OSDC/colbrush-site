@@ -59,8 +59,7 @@ const DonutChart = () => {
 
     // 슬라이스 스타일링
     series.slices.template.setAll({
-      strokeWidth: 3,
-      stroke: am5.color("#ffffff"),
+      strokeWidth: 0,
       cornerRadius: 8,
     });
 
@@ -77,6 +76,15 @@ const DonutChart = () => {
         return am5.color(context.color);
       }
       return fill;
+    });
+    
+    series.slices.template.adapters.add("stroke", function (stroke, target) {
+      const dataItem = target.dataItem;
+      if (dataItem) {
+        const context = dataItem.dataContext as ChartData
+        return am5.color(context.color);
+      }
+      return stroke;
     });
 
     // 데이터 설정
@@ -96,10 +104,10 @@ const DonutChart = () => {
   return (
     <GraphContainer>
       <div className={`flex flex-row items-center justify-between mb-4`}>
-        <p className={`lg:text-[18px] max-lg:text-[14px] font-bold text-gray-800 text-center`}>
+        <p className={`lg:text-[18px] max-lg:text-[14px] font-bold text-gray-100 text-center`}>
           방문자 분석
         </p>
-        <p className={`text-[12px] max-lg:text-[10px] rounded-[2px] bg-gray-100 px-2 py-1 text-gray-400`}>Today</p>
+        <p className={`text-[12px] max-lg:text-[10px] rounded-[4px] bg-gray-200 px-2 py-1 text-gray-100`}>Today</p>
       </div>
 
       <div className={`flex items-center justify-center`}>
@@ -117,7 +125,7 @@ const DonutChart = () => {
                 className="w-3 h-3 max-lg:w-2.5 max-lg:h-2.5 rounded-full shrink-0"
                 style={{ backgroundColor: item.color }}
               />
-              <span className="text-gray-700 font-medium w-full flex flex-row justify-between items-center">
+              <span className="text-white font-light w-full flex flex-row justify-between items-center">
                 <p>{item.category}</p>
                 <p>{item.value}%</p>
               </span>

@@ -38,7 +38,7 @@ function LineChart() {
         wheelY: "none",
         paddingTop: 20,
         paddingBottom: 20,
-        paddingLeft: 20,
+        paddingLeft: 0,
       })
     );
 
@@ -58,6 +58,7 @@ function LineChart() {
       centerX: 1,
       textAlign: "right",
       oversizedBehavior: "wrap", // 글자가 넘칠 경우 줄바꿈
+      fill: am5.color(rootStyle.getPropertyValue('--color-gray-100')),
     })
 
     const xAxis = chart.xAxes.push(
@@ -76,6 +77,7 @@ function LineChart() {
     yRenderer.labels.template.setAll({
       fontFamily: "Pretendard Variable",
       fontSize: 12,
+      fill: am5.color(rootStyle.getPropertyValue('--color-gray-100')),
     });
 
     const yAxis = chart.yAxes.push(
@@ -118,7 +120,7 @@ function LineChart() {
 
   return (
     <GraphContainer className={`min-h-[300px]`}>
-      <p className={`lg:text-[18px] max-lg:text-[14px] text-start mb-4`}>방문자 분석</p>
+      <p className={`lg:text-[18px] max-lg:text-[14px] text-start mb-4 text-gray-100`}>방문자 분석</p>
       <div id="chartdiv" className={`w-full grow`} />
       <div></div>
     </GraphContainer>
