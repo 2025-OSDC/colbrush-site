@@ -15,7 +15,32 @@
 }
 
 @theme {
-  --color-bg: #ffffff;
+  --color-bg: #060010;
+  --color-primary: #8144FF;
+  --color-secondary: #C89AE8;
+  --color-gray-100: #909090;
+  --color-gray-200: #555555;
+  --color-gray-300: #252525;
+
+  --color-protanopia-1: #D64045;
+  --color-protanopia-2: #B3474F;
+  --color-protanopia-sub-1: #6B4423;
+  --color-protanopia-sub-2: #8B7355;
+  --color-protanopia-sub-3: #757575;
+
+  --color-deuteranopia-1: #2D8659;
+  --color-deuteranopia-2: #5A7D6E;
+  --color-deuteranopia-sub-1: #B86F47;
+  --color-deuteranopia-sub-2: #A0694D;
+  --color-deuteranopia-sub-3: #696B63;
+  
+  /* 청색맹은 색상 수정 필요 */
+  --color-tritanopia-1: #0047AB;      
+  --color-tritanopia-2: #1B7B7F;
+  --color-tritanopia-sub-1: #FF8C00;
+  --color-tritanopia-sub-2: #FFD700;
+  --color-tritanopia-sub-3: #CD5C5C;
+
   --color-red: #ff2727;
   --color-deep-red: #CF1E25;
   --color-yellow: #FFB720;
@@ -25,10 +50,6 @@
   --color-gray-blue: #3d4852;
   --color-deep-blue: #00549F;
   --color-purple: #884DFF;
-  --color-gray: #909090;
-  --color-light-gray: #d9d9d9;
-  --color-white: #ffffff;
-  --color-black: #000000;
   
   --shadow-custom: 0 0 6px 0 rgba(0, 0, 0, 0.25);
   
@@ -36,53 +57,113 @@
 }
 
 [data-theme='deuteranopia']{
-  --color-bg: #ffffff;
-  --color-red: #ff2727;
-  --color-deep-red: #d8004b;
-  --color-yellow: #ffb720;
-  --color-light-green: #00ce6c;
-  --color-green: #00887b;
-  --color-blue: #0092aa;
-  --color-gray-blue: #3d4852;
-  --color-deep-blue: #00549f;
-  --color-purple: #884dff;
+  --color-bg: #0d0003;
+  --color-red: #ff2300;
+  --color-deep-red: #d41900;
+  --color-yellow: #ffb700;
+  --color-light-green: #00cee9;
+  --color-green: #0089bb;
+  --color-blue: #9161aa;
+  --color-gray-blue: #3a4856;
+  --color-deep-blue: #3b528a;
+  --color-purple: #d53860;
   --color-gray: #909090;
   --color-light-gray: #d9d9d9;
   --color-white: #ffffff;
   --color-black: #000000;
+  --color-primary: #d22959;
+  --color-secondary: #ea9694;
+  --color-gray-100: #909090;
+  --color-gray-200: #555555;
+  --color-gray-300: #252525;
+  --color-protanopia-1: #D64045;
+  --color-protanopia-2: #bb4500;
+  --color-protanopia-sub-1: #6B4423;
+  --color-protanopia-sub-2: #8e7348;
+  --color-protanopia-sub-3: #757575;
+  --color-deuteranopia-1: #2D8659;
+  --color-deuteranopia-2: #327f96;
+  --color-deuteranopia-sub-1: #B86F47;
+  --color-deuteranopia-sub-2: #a66812;
+  --color-deuteranopia-sub-3: #696B63;
+  --color-tritanopia-1: #0047AB;
+  --color-tritanopia-2: #007ebe;
+  --color-tritanopia-sub-1: #FF8C00;
+  --color-tritanopia-sub-2: #fed71a;
+  --color-tritanopia-sub-3: #CD5C5C;
 }
 
 [data-theme='protanopia']{
-  --color-bg: #ffffff;
-  --color-red: #e75100;
-  --color-deep-red: #cf1e25;
-  --color-yellow: #ffb720;
-  --color-light-green: #00d29a;
-  --color-green: #00887b;
-  --color-blue: #0092aa;
-  --color-gray-blue: #3d4852;
-  --color-deep-blue: #00549f;
-  --color-purple: #884dff;
+  --color-bg: #0d0003;
+  --color-red: #ff2300;
+  --color-deep-red: #d41900;
+  --color-yellow: #ffb700;
+  --color-light-green: #00cee9;
+  --color-green: #0089bb;
+  --color-blue: #9161aa;
+  --color-gray-blue: #3a4856;
+  --color-deep-blue: #3b528a;
+  --color-purple: #d53860;
   --color-gray: #909090;
   --color-light-gray: #d9d9d9;
   --color-white: #ffffff;
   --color-black: #000000;
+  --color-primary: #d22959;
+  --color-secondary: #ea9694;
+  --color-gray-100: #909090;
+  --color-gray-200: #555555;
+  --color-gray-300: #252525;
+  --color-protanopia-1: #D64045;
+  --color-protanopia-2: #bb4500;
+  --color-protanopia-sub-1: #6B4423;
+  --color-protanopia-sub-2: #8e7348;
+  --color-protanopia-sub-3: #757575;
+  --color-deuteranopia-1: #2D8659;
+  --color-deuteranopia-2: #327f96;
+  --color-deuteranopia-sub-1: #B86F47;
+  --color-deuteranopia-sub-2: #a66812;
+  --color-deuteranopia-sub-3: #696B63;
+  --color-tritanopia-1: #0047AB;
+  --color-tritanopia-2: #007ebe;
+  --color-tritanopia-sub-1: #FF8C00;
+  --color-tritanopia-sub-2: #fed71a;
+  --color-tritanopia-sub-3: #CD5C5C;
 }
 
 [data-theme='tritanopia']{
-  --color-bg: #ffffff;
-  --color-red: #ff2727;
-  --color-deep-red: #bd3f00;
-  --color-yellow: #ffb720;
-  --color-light-green: #52c93f;
-  --color-green: #817403;
-  --color-blue: #007cff;
-  --color-gray-blue: #3d4852;
-  --color-deep-blue: #00549f;
-  --color-purple: #884dff;
+  --color-bg: #010110;
+  --color-red: #ff002a;
+  --color-deep-red: #de0027;
+  --color-yellow: #ffa527;
+  --color-light-green: #81c340;
+  --color-green: #338243;
+  --color-blue: #0079ff;
+  --color-gray-blue: #394952;
+  --color-deep-blue: #005b9f;
+  --color-purple: #4066ff;
   --color-gray: #909090;
   --color-light-gray: #d9d9d9;
   --color-white: #ffffff;
   --color-black: #000000;
+  --color-primary: #2c60ff;
+  --color-secondary: #b5a1e8;
+  --color-gray-100: #909090;
+  --color-gray-200: #555555;
+  --color-gray-300: #252525;
+  --color-protanopia-1: #D64045;
+  --color-protanopia-2: #ba404f;
+  --color-protanopia-sub-1: #6B4423;
+  --color-protanopia-sub-2: #946f55;
+  --color-protanopia-sub-3: #757575;
+  --color-deuteranopia-1: #2D8659;
+  --color-deuteranopia-2: #5d7c6e;
+  --color-deuteranopia-sub-1: #B86F47;
+  --color-deuteranopia-sub-2: #aa634d;
+  --color-deuteranopia-sub-3: #696B63;
+  --color-tritanopia-1: #0047AB;
+  --color-tritanopia-2: #007c7f;
+  --color-tritanopia-sub-1: #FF8C00;
+  --color-tritanopia-sub-2: #ffc514;
+  --color-tritanopia-sub-3: #CD5C5C;
 }
 
