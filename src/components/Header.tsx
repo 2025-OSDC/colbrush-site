@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
     <nav
-      className="relative w-full bg-white shadow-sm"
+      className="relative w-full shadow-sm"
       style={{ boxShadow: "0px 0px 6px 0px rgba(0, 0, 0, 0.17)" }}
     >
       <div className="flex h-14 w-full items-center justify-between px-4 sm:h-16 sm:px-8 lg:px-24">
