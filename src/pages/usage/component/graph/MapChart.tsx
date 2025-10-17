@@ -57,7 +57,7 @@ const MapChart = () => {
     polygonSeries.mapPolygons.template.setAll({
       fill: am5.color(0xececec),
       stroke: am5.color(0xececec),
-      strokeWidth: 1,
+      strokeOpacity: 0,
     })
 
     // 특정 국가 색상 변경
@@ -80,7 +80,7 @@ const MapChart = () => {
 
   return (
     <GraphContainer>
-      <p className={`lg:text-[18px] max-lg:text-[14px] text-start mb-4`}>국가별 통계</p>
+      <p className={`lg:text-[18px] max-lg:text-[14px] text-start mb-4 text-gray-100`}>국가별 통계</p>
       <div className={`grow shrink-0 flex items-center justify-center`}>
         <div id="mapdiv" className={`w-full aspect-5/3`} />
       </div>

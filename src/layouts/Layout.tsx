@@ -7,7 +7,7 @@ import { ThemeSwitcher } from "colbrush/client";
 
 export default function Layout() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col bg-bg">
       <Header />
       <main className="flex-1">
         <Outlet />

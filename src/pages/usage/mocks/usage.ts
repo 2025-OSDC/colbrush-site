@@ -38,32 +38,65 @@ export const TODOS = {
 }
 
 export const Products = [
-    {
-      id: "01",
-      name: "선크림",
-      count: 45,
-      bgColor: 'bg-blue/20',
-      barColor: 'bg-blue',
-    },
-    {
-      id: "02",
-      name: "아이크림",
-      count: 29,
-      bgColor: 'bg-light-green/20',
-      barColor: 'bg-light-green',
-    },
-    {
-      id: "03",
-      name: "로션",
-      count: 18,
-      bgColor: 'bg-purple/20',
-      barColor: 'bg-purple',
-    },
-    {
-      id: "04",
-      name: "미스트",
-      count: 25,
-      bgColor: 'bg-yellow/20',
-      barColor: 'bg-yellow',
-    }
-  ]
+  {
+    id: "01",
+    name: "선크림",
+    count: 45,
+    bgColor: 'bg-blue/20',
+    barColor: 'bg-blue',
+  },
+  {
+    id: "02",
+    name: "아이크림",
+    count: 29,
+    bgColor: 'bg-light-green/20',
+    barColor: 'bg-light-green',
+  },
+  {
+    id: "03",
+    name: "로션",
+    count: 18,
+    bgColor: 'bg-purple/20',
+    barColor: 'bg-purple',
+  },
+  {
+    id: "04",
+    name: "미스트",
+    count: 25,
+    bgColor: 'bg-yellow/20',
+    barColor: 'bg-yellow',
+  }
+]
+
+export const simulatorData = [
+  {
+    type: "protanopia",
+    title: "적색맹 (protanopia)",
+    text: [
+      "빨강, 주황, 초록, 갈색 등",
+      "빨강-갈색-초록-주황 등이 비슷하게 느껴짐",
+      "빨강-검정(갈색), 빨강-초록 등"
+    ],
+    color: "bg-[#ff000080]"
+  },
+  {
+    type: "deuteranopia",
+    title: "녹색맹 (Deuteranopia)",
+    text: [
+      "초록, 빨강, 주황, 노랑, 갈색 등",
+      "빨강-초록, 초록-노랑, 초록-주황 등이 섞여 보임",
+      "초록-빨강, 갈색-빨강-녹색 등"
+    ],
+    color: "bg-[#00ff0080]"
+  },
+  {
+    type: "tritanopia",
+    title: "청색맹 (Tritanopia)",
+    text: [
+      "파랑, 하늘색, 노랑, 연두, 보라 등",
+      "파랑-초록, 노랑-분홍 계열 구분이 어려움",
+      "파랑-녹색, 하늘색-회색, 노랑-연두 등"
+    ],
+    color: "bg-[#0000ff80]"
+  }
+]

@@ -21,7 +21,7 @@ const Todo: React.FC<TodoProps> = ({
     state === "진행 중" ? `text-yellow` : `text-light-green`
 
   return (
-    <div className={`rounded-[16px] w-full px-5 py-4 flex flex-col items-start gap-2 bg-white`}>
+    <div className={`rounded-[16px] w-full px-5 py-4 flex flex-col items-start gap-2 bg-bg`}>
       <div className={`text-[12px] max-lg:text-[10px] py-0.5 px-1.5 w-fit rounded-[4px] ${bgColor} ${textColor}`}>
         {number}순위
       </div>
