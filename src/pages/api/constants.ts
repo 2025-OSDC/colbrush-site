@@ -6,6 +6,8 @@ export const GENERATE_THEME_COMMAND =
   "npx colbrush --generate --css=src/index.css";
 export const THEMEPROVIDER_SETTING =
   "import { ThemeProvider } from 'colbrush/client'; \nexport default function RootLayout({ children }) {  \n\treturn (   \n\t\t<ThemeProvider> \n\t\t\t{children} \n\t\t</ThemeProvider>  \n\t); \n}";
+export const STYLESCSS_IMPORT = "// index.css\n@import 'colbrush/styles.css';"
+export const USE_EXAMPLE="# 기본 파일(src/index.css)로 테마 생성\ncolbrush\n# 사용자 지정 파일로 테마 생성\ncolbrush generate --css=./styles/main.css"
 export const THEMEPROVIDER =
   "import { ThemeProvider } from 'colbrush/client'; \n//...\n<ThemeProvider> \n\t<MyApp /> \n</ThemeProvider>";
 export const USETHEME =

@@ -1,15 +1,13 @@
 export default function Bullet({
   children,
-  className,
+  className
 }: {
   children?: React.ReactNode;
   className?: string;
 }) {
   return (
-    <div className={`mt-5 flex items-center gap-1.5 sm:gap-2 ${className}`}>
-      <div className="text-gray flex flex-row flex-wrap items-center gap-1 text-sm font-normal sm:text-base lg:text-[18px]">
-        • {children}
-      </div>
-    </div>
+      <li className={`text-gray-100 gap-1 whitespace-wrap text-sm font-normal sm:text-base lg:text-[18px] my-1 ${className}`}>
+        {children}
+      </li>
   );
 }

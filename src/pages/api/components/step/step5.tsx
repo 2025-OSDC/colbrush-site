@@ -2,12 +2,13 @@ import CodeBlock from "../../../../components/defaultCodeBlock/DefaultCodeBlock"
 import { LICENSE } from "../../constants";
 import Bullet from "../bullet";
 import Description from "../../../../components/description";
+import { GradientTitle } from "../gradientTitle";
 
-export default function Step5({ heading1 }: { heading1: string }) {
+export default function Step5() {
   return (
     <section className="flex flex-col gap-3 sm:gap-4">
       <>
-        <h1 className={heading1}>5. 라이선스</h1>
+        <GradientTitle>5. 라이선스</GradientTitle>
         <Description>
           Colbrush는 MIT License로 배포되는 오픈소스 프로젝트입니다.
         </Description>

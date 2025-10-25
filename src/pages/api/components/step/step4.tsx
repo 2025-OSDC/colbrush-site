@@ -1,36 +1,31 @@
-import Code from "../../../../components/code";
-import Bullet from "../bullet";
-import SubTitle from "../subTitle";
 
-export default function Step4({ heading1 }: { heading1: string }) {
+import CodeBlock from "../../../../components/defaultCodeBlock/DefaultCodeBlock";
+import { USE_EXAMPLE } from "../../constants";
+import Bullet from "../bullet";
+import { ExplaneCommandTable } from "../explainCommandTable";
+import { ExplaneOptionTable } from "../explainOptionTable";
+import { GradientTitle } from "../gradientTitle";
+
+export default function Step4() {
   return (
     <section className="flex flex-col gap-3 sm:gap-4">
-      <h1 className={heading1}>4. CLI (Command-Line Interface)</h1>
+      <GradientTitle>4. CLI (Command-Line Interface)</GradientTitle>
+      <h3 className="text-gray-100 text-[18px]">Colbrush는 개발자가 정의한 CSS 변수를 기반으로, Protanopia(적색맹), Deuteranopia(녹색맹), Tritanopia(청색맹)에 최적화된 접근성 컬러 테마를 
+          자동으로 생성하고 기존 CSS 파일에 추가하는 커맨드라인 도구입니다.
+      </h3>
       <div className="space-y-2 sm:space-y-3">
-        <SubTitle>
-          <Code className="text-gray-blue text-lg font-medium sm:text-xl lg:text-[24px]">{`colbrush`}</Code>
-        </SubTitle>
-        <Bullet className="leading-7 sm:leading-8">
-          <span className="font-semibold">설명: </span>
-          <Code className="text-black">colbrush</Code> 라이브러리의 핵심 기능을
-          담당하는 커맨드라인 도구입니다.
-        </Bullet>
-        <Bullet>
-          <span className="font-semibold">명령어: </span>
-          <Code className="text-black">
-            npx colbrush [--generate] [--css=src/index.css]
-          </Code>
-        </Bullet>
-        <Bullet className="leading-7 sm:leading-8">
-          <Code className="text-black">--generate</Code> :{" "}
-          <Code className="text-black">@theme</Code> 구문으로 정의된 CSS 변수를
-          기반으로 색맹 유형별 테마 파일을 생성합니다.
-        </Bullet>
-        <Bullet className="leading-7 sm:leading-8">
-          <Code className="text-black">{`--css=<path>`}</Code> : 테마를 생성할
-          CSS 파일의 경로를 지정합니다. 기본값은
-          <Code className="text-black">src/index.css</Code> 입니다.
-        </Bullet>
+        <ul className="list-disc list-inside">
+          <Bullet className="pt-2">주요 명령어 및 사용법</Bullet>
+          <div className="overflow-x-hidden sm:overflow-x-scroll">
+            <ExplaneCommandTable></ExplaneCommandTable>
+          </div>
+          <Bullet className="pt-2">옵션</Bullet>
+          <div className="overflow-x-hidden sm:overflow-x-scroll">
+            <ExplaneOptionTable></ExplaneOptionTable>
+          </div>
+          <Bullet className="pt-2">사용 예시</Bullet>
+          <CodeBlock code={USE_EXAMPLE}/>
+        </ul>
       </div>
     </section>
   );

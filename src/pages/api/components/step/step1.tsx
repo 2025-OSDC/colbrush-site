@@ -2,18 +2,20 @@ import CodeBlock from "../../../../components/defaultCodeBlock/DefaultCodeBlock"
 import {
   GENERATE_THEME_COMMAND,
   INSTALL_COMMAND,
+  STYLESCSS_IMPORT,
   THEMEFILE_COMMEND,
   THEMEPROVIDER_SETTING,
 } from "../../constants";
 import SubTitle from "../subTitle";
 import Description from "../../../../components/description";
 import Code from "../../../../components/code";
+import { GradientTitle } from "../gradientTitle";
 
-export default function Step1({ heading1 }: { heading1: string }) {
+export default function Step1() {
   return (
     <section className="flex flex-col gap-3 sm:gap-4">
       <>
-        <h1 className={heading1}>1. 시작하기 (Get Started)</h1>
+        <GradientTitle>1. 시작하기 (Get Started)</GradientTitle>
         <Description>
           이 섹션은 Colbrush의 설치부터 기본적인 사용법까지 안내합니다.
         </Description>
@@ -37,10 +39,17 @@ export default function Step1({ heading1 }: { heading1: string }) {
       <section className="space-y-2 sm:space-y-3">
         <SubTitle>ThemeProvider 설정</SubTitle>
         <Description className="leading-7 sm:leading-8">
-          앱의 루트 컴포넌트를 <Code className="text-black">ThemeProvider</Code>
+          앱의 루트 컴포넌트를 <Code>ThemeProvider</Code>
           로 감싸서 전역 테마 관리를 시작합니다.
         </Description>
         <CodeBlock code={THEMEPROVIDER_SETTING} language="ts"></CodeBlock>
+      </section>
+      <section className="space-y-2 sm:space-y-3">
+        <SubTitle>colbrush/styles.css import 하기 (필수)</SubTitle>
+        <Description className="leading-7 sm:leading-8">
+          필터 및 테마 스위치 버튼 스타일을 정의합니다.
+        </Description>
+        <CodeBlock code={STYLESCSS_IMPORT} language="ts"></CodeBlock>
       </section>
     </section>
   );
