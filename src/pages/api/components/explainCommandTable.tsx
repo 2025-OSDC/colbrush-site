@@ -5,7 +5,7 @@ export function ExplaneCommandTable() {
     "text-start font-medium text-gray-100 text-[18px] py-[21px] border-b-[1px] border-b-gray-200";
   const tdStyle1 = "py-[10px] px-[28px] whitespace-nowrap";
   const tdStyle2 =
-    "font-medium text-gray-100 pr-[28px] min-w-[300px] text-[18px]";
+    "font-medium text-gray-100 pr-[28px] min-w-[300px] text-sm sm:text-[18px]";
   const trStyle = "py-[10px]";
 
   return (

@@ -50,7 +50,7 @@ export default function Step4() {
           </Bullet>
           <CodeBlock code={OUTPUT_CSS_EXAMPLE}></CodeBlock>
         </ul>
-        <ul className="list-inside list-disc">
+        <div className="flex flex-col gap-5">
           <SubTitle>React 연동 (Frontend)</SubTitle>
           <Description>
             테마 생성 후, <Code>{`colbrush/client`}</Code> 라이브러리를 사용해
@@ -62,22 +62,24 @@ export default function Step4() {
           <Description>
             <Code>{`ThemeSwitcher`}</Code> 컴포넌트로 테마 변경 스위치 추가
           </Description>
-        </ul>
-        <ul className="list-inside list-disc">
+        </div>
+        <div>
           <SubTitle>에러 진단 및 도움말</SubTitle>
           <Description>
             Colbrush는 문제 발생 시 상세한 에러 메시지와 해결 제안을 제공하여
             디버깅을 돕습니다.
           </Description>
-          <Bullet>
-            파일/변수 없음, CSS 파싱 오류, 권한 오류 등에 대해 명확한 안내를
-            제공합니다.
-          </Bullet>
-          <Bullet>
-            <Code>colbrush --doctor</Code> 명령어로 시스템 상태를 점검하여
-            복잡한 오류를 해결할 수 있습니다.
-          </Bullet>
-        </ul>
+          <ul className="list-inside list-disc">
+            <Bullet>
+              파일/변수 없음, CSS 파싱 오류, 권한 오류 등에 대해 명확한 안내를
+              제공합니다.
+            </Bullet>
+            <Bullet>
+              <Code>colbrush --doctor</Code> 명령어로 시스템 상태를 점검하여
+              복잡한 오류를 해결할 수 있습니다.
+            </Bullet>
+          </ul>
+        </div>
       </div>
     </section>
   );
