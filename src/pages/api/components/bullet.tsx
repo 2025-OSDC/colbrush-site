@@ -1,13 +1,15 @@
 export default function Bullet({
   children,
-  className
+  className,
 }: {
   children?: React.ReactNode;
   className?: string;
 }) {
   return (
-      <li className={`text-gray-100 gap-1 whitespace-wrap text-sm font-normal sm:text-base lg:text-[18px] my-1 ${className}`}>
-        {children}
-      </li>
+    <li
+      className={`whitespace-wrap my-1 gap-1 text-sm leading-7.5 font-normal text-gray-100 sm:text-base lg:text-[18px] ${className}`}
+    >
+      {children}
+    </li>
   );
 }

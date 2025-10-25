@@ -12,9 +12,9 @@ export default function Api() {
       <div className="flex w-full max-w-[981px] flex-col gap-12 self-center py-8 sm:gap-16 sm:py-12 lg:gap-[90px] lg:py-[70px]">
         <section className="flex w-full flex-col">
           <GradientTitle big={true}>Color-Blind-Theme API</GradientTitle>
-          <Description>
+          <Description className="pt-4 !leading-7">
             웹 접근성을 위한 색맹 친화 테마 라이브러리입니다.
-            <br></br>
+            <br />
             color-blind + chroma.js 기반으로 다양한 색각 이상 유형에 최적화된
             테마를 제공합니다.
           </Description>
