@@ -27,7 +27,7 @@ export default function Step2() {
           <Bullet >Props:</Bullet>
           <ul className="list-inside list-disc pl-4">
             <Bullet className="py-1"><Code>options</Code> (선택 사항): 드롭다운에 표시될 테마 목록을 커스터마이징합니다.</Bullet>
-            <Bullet className="py-1"><Code>position</Code> (선택 사항): ThemeSwitcher를 띄울 위치를 선정합니다.{`\n`}&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;('left-bottom', ‘right-bottom’, 'left-top’, 'right-top' 중 선택 가능. default: right-bottom)</Bullet>
+            <Bullet className="py-1"><Code>position</Code> (선택 사항): ThemeSwitcher를 띄울 위치를 선정합니다.<br/>&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;('left-bottom', ‘right-bottom’, 'left-top’, 'right-top' 중 선택 가능. default: right-bottom)</Bullet>
           </ul>
           <Bullet>
             <span className="font-semibold">사용 예시:</span>
@@ -61,10 +61,10 @@ export default function Step2() {
           <Bullet className="py-1">
             <span className="font-semibold">Props:&thinsp;&thinsp;</span>
             <ul className="list-inside list-disc pl-4">
-              <Bullet className="py-1"><Code>defaultMode</Code> (선택 사항):  SimulationFilter의 값을 설정합니다.{`\n`}&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;(‘none’, 'protanopia’, 'deuteranopia’, ‘tritanopia’, default값: none)</Bullet>
+              <Bullet className="py-1"><Code>defaultMode</Code> (선택 사항):  SimulationFilter의 값을 설정합니다.<br/>&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;(‘none’, 'protanopia’, 'deuteranopia’, ‘tritanopia’, default값: none)</Bullet>
               <Bullet className="py-1"><Code>storageKey</Code> (선택 사항): localStorage key값 커스터마이징 (default: colbrush-filter)</Bullet>
               <Bullet className="py-1"><Code>devHostPattern</Code> (선택 사항): 개발 호스트 정규식 커스터마이징 (default: localhost / 127 / 192.168.x)</Bullet>
-              <Bullet className="py-1"><Code>position</Code> (선택 사항): toolbar를 띄울 위치를 선정합니다. ('left-bottom', ‘right-bottom’, 'left-top’, 'right-top' 중 선택 가능. default: left-bottom)</Bullet>
+              <Bullet className="py-1"><Code>position</Code> (선택 사항): toolbar를 띄울 위치를 선정합니다.<br/>&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;('left-bottom', ‘right-bottom’, 'left-top’, 'right-top' 중 선택 가능. default: left-bottom)</Bullet>
               <Bullet className="py-1"><Code>allowInProd</Code> (선택 사항): 프로덕션에서도 강제로 허용(디버깅용) default값: false</Bullet>
             </ul>
           </Bullet>
