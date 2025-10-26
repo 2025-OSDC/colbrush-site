@@ -7,11 +7,11 @@ import { ThemeSwitcher } from "colbrush/client";
 
 export default function Layout() {
   return (
-    <div className="flex min-h-screen flex-col bg-white">
+    <div className="bg-bg flex min-h-screen flex-col">
       <Header />
       <main className="flex-1">
         <Outlet />
-        <SimulationFilter allowInProd={true} />
+        <SimulationFilter allowInProd={true} position={"left-top"} />
         <ThemeSwitcher />
       </main>
       <Footer />

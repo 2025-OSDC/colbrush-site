@@ -6,10 +6,10 @@ export default function Bullet({
   className?: string;
 }) {
   return (
-    <div className={`mt-5 flex items-center gap-1.5 sm:gap-2 ${className}`}>
-      <div className="text-gray flex flex-row flex-wrap items-center gap-1 text-sm font-normal sm:text-base lg:text-[18px]">
-        • {children}
-      </div>
-    </div>
+    <li
+      className={`whitespace-wrap my-1 gap-1 text-sm leading-6.5 font-normal text-gray-100 sm:text-base lg:text-[18px] ${className}`}
+    >
+      {children}
+    </li>
   );
 }

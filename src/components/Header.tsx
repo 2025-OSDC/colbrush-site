@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
     <nav
-      className="relative w-full bg-white shadow-sm"
+      className="relative w-full border-b border-[#ffffff24] bg-[#ffffff04] shadow-[0px_0px_6px_0px_rgba(0,_0,_0,_0.17)]"
       style={{ boxShadow: "0px 0px 6px 0px rgba(0, 0, 0, 0.17)" }}
     >
       <div className="flex h-14 w-full items-center justify-between px-4 sm:h-16 sm:px-8 lg:px-24">
@@ -25,13 +25,13 @@ export default function Header() {
           </Link>
         </div>
 
-        <div className="flex items-center gap-4 sm:gap-6 lg:gap-10">
-          <div className="hidden items-center gap-4 sm:flex lg:gap-10">
+        <div className="flex items-center gap-6 sm:gap-8 lg:gap-12">
+          <div className="hidden items-center gap-6 sm:flex lg:gap-12">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 to={item.path}
-                className="text-gray-blue text-sm font-normal transition-colors hover:text-black lg:text-base"
+                className="text-sm font-normal text-white transition-colors hover:text-gray-100 lg:text-base"
               >
                 {item.label}
               </Link>
@@ -42,11 +42,15 @@ export default function Header() {
             href={GITHUB_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="border-gray-blue flex items-center justify-center gap-1.5 rounded-lg border px-2 py-1.5 transition-colors hover:bg-gray-50 sm:gap-2.5 sm:px-2.5 sm:py-2"
+            className="group flex items-center justify-center gap-1.5 rounded-lg border border-white px-2 py-1.5 transition-colors hover:bg-gray-50 sm:gap-2.5 sm:px-2.5 sm:py-2"
           >
             <div className="flex items-center gap-1.5 sm:gap-2.5">
-              <GitHubIcon width={16} height={16} className="sm:h-5 sm:w-5" />
-              <span className="text-gray-blue text-xs font-normal hover:text-black sm:text-sm">
+              <GitHubIcon
+                width={16}
+                height={16}
+                className={`text-white transition-colors group-hover:text-black sm:h-5 sm:w-5`}
+              />
+              <span className="text-xs font-normal text-white transition-colors group-hover:text-black sm:text-sm">
                 GitHub
               </span>
             </div>
@@ -54,31 +58,31 @@ export default function Header() {
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="flex h-6 w-6 flex-col items-center justify-center space-y-1 sm:hidden cursor-pointer"
+            className="flex h-6 w-6 cursor-pointer flex-col items-center justify-center space-y-1 sm:hidden"
             aria-label="Toggle mobile menu"
           >
             <span
-              className={`bg-gray-blue block h-0.5 w-5 transition-transform ${isMobileMenuOpen ? "translate-y-1.5 rotate-45" : ""}`}
+              className={`block h-0.5 w-5 bg-white transition-transform ${isMobileMenuOpen ? "translate-y-1.5 rotate-45" : ""}`}
             ></span>
             <span
-              className={`bg-gray-blue block h-0.5 w-5 transition-opacity ${isMobileMenuOpen ? "opacity-0" : ""}`}
+              className={`block h-0.5 w-5 bg-white transition-opacity ${isMobileMenuOpen ? "opacity-0" : ""}`}
             ></span>
             <span
-              className={`bg-gray-blue block h-0.5 w-5 transition-transform ${isMobileMenuOpen ? "-translate-y-1.5 -rotate-45" : ""}`}
+              className={`block h-0.5 w-5 bg-white transition-transform ${isMobileMenuOpen ? "-translate-y-1.5 -rotate-45" : ""}`}
             ></span>
           </button>
         </div>
       </div>
 
       {isMobileMenuOpen && (
-        <div className="absolute top-full left-0 z-50 w-full border-t border-gray-200 bg-white shadow-lg sm:hidden">
+        <div className="bg-bg absolute top-full left-0 z-50 w-full border-b border-[#ffffff24] sm:hidden">
           <div className="flex flex-col py-4">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 to={item.path}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="text-gray-blue px-4 py-3 text-base font-normal transition-colors hover:bg-gray-50"
+                className="px-4 py-3 text-base font-normal text-white transition-colors hover:text-gray-100"
               >
                 {item.label}
               </Link>

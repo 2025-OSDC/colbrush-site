@@ -5,15 +5,22 @@ export const INSTALL_CONSTANTS = {
 
   // Banner
   BANNER: {
-    DESCRIPTION: "색각 이상자도 구분 가능한 UI 테마\n단 한 줄로 적용하세요",
+    DESCRIPTION: "코드 한 줄로 적용하는\n색각 이상자를 위한 UI 테마 스위칭",
+  },
+
+  // Suggestion
+  SUGGESTION: {
+    DESCRIPTION:
+      "Colbrush는 단 한 줄의 코드로 색각 보정 테마를 자동 생성합니다.\n웹 접근성 작업을 획기적으로 단축하세요.",
+    COMMAND: "npx colbrush --generate --css=./src/styles/brand-palette.css",
   },
 
   // Explanation
   EXPLANATION: {
     COLOR_BLIND_SUPPORT: {
-      TITLE: "3가지 색맹 유형 지원",
+      TITLE: "주요 색맹 유형 지원",
       DESCRIPTION:
-        " 등 주요 색각 이상 유형을 지원하여, 다양한 시각 조건에서도 명확하게 구분되는 UI를 제공합니다.",
+        " 주요 색각 이상 유형을 모두 지원하여, 다양한 시각 조건에서도 명확하게 구분되는 UI를 제공합니다.",
     },
     AUTO_GENERATION: {
       TITLE: "PostCSS 기반 CSS 변수 자동 생성",
@@ -78,6 +85,73 @@ export const INSTALL_CONSTANTS = {
       PATH_DESCRIPTION_PREFIX: "경로를 지정하면 (",
       PATH_EXAMPLE: "--css=src/index.css",
       PATH_DESCRIPTION_SUFFIX: ") 원하는 CSS 파일에 바로 생성할 수도 있습니다.",
+    },
+  },
+
+  // Effect
+  EFFECT: {
+    TITLE: "웹접근성의 기술적 장벽을 낮추다",
+    BEFORE: {
+      LABEL: "BEFORE",
+      DESCRIPTION: "기존 수동 방식",
+      ITEMS: [
+        {
+          text: "최소 40시간 이상",
+          subtext: "(기획, 수동 검증, CSS 작성 및 디버깅)",
+          hasBr: true as const,
+        },
+        {
+          text: "프로젝트당 300만원 이상 (전문 인력 시간당 비용 반영)",
+          subtext: "",
+          hasBr: false as const,
+        },
+        {
+          text: "색채학 지식, WCAG 지침에 대한 이해",
+          subtext: "",
+          hasBr: false as const,
+        },
+        {
+          text: "전체 CSS 파일 재검증 및 재작업 (반복 비용 발생)",
+          subtext: "",
+          hasBr: false as const,
+        },
+        {
+          text: "12% 이하 (높은 난이도로 인해 도입 포기)",
+          subtext: "",
+          hasBr: false as const,
+        },
+      ],
+    },
+    AFTER: {
+      LABEL: "AFTER",
+      DESCRIPTION: "Colbrush 자동화",
+      ITEMS: [
+        {
+          text: "45분 이내 (CLI 실행 및 ThemeProvider 통합)",
+          subtext: "",
+          hasBr: false as const,
+        },
+        {
+          text: "무료 (MIT License 오픈소스)",
+          subtext: "",
+          hasBr: false as const,
+        },
+        {
+          text: "일반 개발자 누구나 (전문 지식 불필요)",
+          subtext: "",
+          hasBr: false as const,
+        },
+        {
+          text: "CLI 한 줄 재실행 (10초 만에 자동 반영)",
+          subtext: "",
+          hasBr: false as const,
+        },
+        {
+          text: "목표 80% 이상 (진입 장벽 붕괴)",
+          subtext: "",
+          hasBr: false as const,
+        },
+      ],
     },
   },
 

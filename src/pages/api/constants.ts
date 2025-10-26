@@ -6,6 +6,13 @@ export const GENERATE_THEME_COMMAND =
   "npx colbrush --generate --css=src/index.css";
 export const THEMEPROVIDER_SETTING =
   "import { ThemeProvider } from 'colbrush/client'; \nexport default function RootLayout({ children }) {  \n\treturn (   \n\t\t<ThemeProvider> \n\t\t\t{children} \n\t\t</ThemeProvider>  \n\t); \n}";
+export const STYLESCSS_IMPORT = "// index.css\n@import 'colbrush/styles.css';";
+export const USE_EXAMPLE =
+  "# 기본 파일(src/index.css)로 테마 생성\ncolbrush\n# 사용자 지정 파일로 테마 생성\ncolbrush generate --css=./styles/main.css";
+export const INPUT_CSS_EXAMPLE =
+  "/* @theme 블록을 사용합니다.*/\n@theme { \n  --color-primary-500: #7fe4c1; \n}";
+export const OUTPUT_CSS_EXAMPLE =
+  '[data-theme="protanopia"] { /* 적색맹 테마 */\n\t/* ... 최적화된 CSS 변수 ... */\n}\n[data-theme="deuteranopia"] { /* 녹색맹 테마 */\n\t/* ... 최적화된 CSS 변수 ... */\n}\n/* ... tritanopia 테마 ... */';
 export const THEMEPROVIDER =
   "import { ThemeProvider } from 'colbrush/client'; \n//...\n<ThemeProvider> \n\t<MyApp /> \n</ThemeProvider>";
 export const USETHEME =

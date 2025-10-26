@@ -23,19 +23,21 @@ const TodoList: React.FC<TodoListProps> = ({ state, todos }) => {
 
   return (
     <div
-      className={`flex h-full w-full flex-col gap-4 rounded-[16px] bg-[#F5F5F5] p-4`}
+      className={`flex h-full w-full flex-col gap-4 rounded-[16px] bg-gray-300 p-4`}
     >
       <div className={`flex flex-row items-center gap-2.5`}>
         <div className={`flex flex-row items-center gap-2`}>
           <div
             className={`rounded-full max-lg:h-1.5 max-lg:w-1.5 lg:h-2 lg:w-2 ${color}`}
           />
-          <p className={`text-start max-lg:text-[14px] lg:text-[16px]`}>
+          <p
+            className={`text-start font-medium max-lg:text-[14px] lg:text-[16px]`}
+          >
             {state}
           </p>
         </div>
         <div
-          className={`flex h-5 w-5 items-center justify-center rounded-full bg-[#D8D8D8] text-[12px] text-[#625F6D] max-lg:h-4 max-lg:w-4 max-lg:text-[10px]`}
+          className={`flex h-5 w-5 items-center justify-center rounded-full bg-gray-200 text-[12px] text-gray-100 max-lg:h-4 max-lg:w-4 max-lg:text-[10px]`}
         >
           {todos.length}
         </div>

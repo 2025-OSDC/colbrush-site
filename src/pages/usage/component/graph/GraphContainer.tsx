@@ -1,10 +1,17 @@
-const GraphContainer = ({children, className} : {children: React.ReactNode, className?: string}) => {
-
+const GraphContainer = ({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => {
   return (
-    <div className={`flex flex-col w-full h-full p-6 max-lg:p-4 bg-white rounded-[14px] shadow-custom font-pretendard ${className}`}>
+    <div
+      className={`shadow-custom font-pretendard flex h-full w-full flex-col rounded-[14px] bg-gray-300 p-6 max-lg:p-4 ${className}`}
+    >
       {children}
     </div>
-  )
-}
+  );
+};
 
 export default GraphContainer;
