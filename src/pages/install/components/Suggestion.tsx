@@ -2,6 +2,7 @@ import { Logo } from "../../../components/icons/Logo";
 import { LogoText } from "../../../components/icons/LogoText";
 import { INSTALL_CONSTANTS } from "../constants";
 import CopyIcon from "@assets/svgs/copy.svg?react";
+import TextType from "../../../components/animations/TextType";
 
 const Suggestion = () => {
   const handleCopyCode = async () => {
@@ -43,7 +44,12 @@ const Suggestion = () => {
         </div>
         <div className="flex flex-col items-start justify-start gap-3.5 self-stretch overflow-hidden rounded-br-lg rounded-bl-lg bg-[#252525] p-4 md:p-6">
           <div className="justify-start self-stretch text-start font-mono text-sm font-medium break-all text-white md:text-base lg:text-lg">
-            {INSTALL_CONSTANTS.SUGGESTION.COMMAND}
+            <TextType
+              text={INSTALL_CONSTANTS.SUGGESTION.COMMAND}
+              typingSpeed={50}
+              className="inline-block"
+              showCursor={true}
+            />
           </div>
         </div>
       </div>
