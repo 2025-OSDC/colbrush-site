@@ -25,6 +25,7 @@ const CallToAction = () => {
         <Button
           variant="purple"
           onClick={() => window.open(GITHUB_URL, "_blank")}
+          className="!h-10 !w-36 !text-xs sm:!h-11 sm:!w-44 sm:!text-sm"
         >
           {INSTALL_CONSTANTS.GET_STARTED}
         </Button>
