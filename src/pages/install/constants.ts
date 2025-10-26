@@ -12,15 +12,15 @@ export const INSTALL_CONSTANTS = {
   SUGGESTION: {
     DESCRIPTION:
       "Colbrush는 단 한 줄의 코드로 색각 보정 테마를 자동 생성합니다.\n웹 접근성 작업을 획기적으로 단축하세요.",
-    COMMAND: "npx colbrush --generate --css=./src/styles/brand-palette.css"
+    COMMAND: "npx colbrush --generate --css=./src/styles/brand-palette.css",
   },
 
   // Explanation
   EXPLANATION: {
     COLOR_BLIND_SUPPORT: {
-      TITLE: "3가지 색맹 유형 지원",
+      TITLE: "주요 색맹 유형 지원",
       DESCRIPTION:
-        " 등 주요 색각 이상 유형을 지원하여, 다양한 시각 조건에서도 명확하게 구분되는 UI를 제공합니다.",
+        " 주요 색각 이상 유형을 모두 지원하여, 다양한 시각 조건에서도 명확하게 구분되는 UI를 제공합니다.",
     },
     AUTO_GENERATION: {
       TITLE: "PostCSS 기반 CSS 변수 자동 생성",

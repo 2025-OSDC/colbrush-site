@@ -9,7 +9,7 @@ export default function Description({
 }) {
   return (
     <p
-      className={`text-gray text-sm font-normal sm:text-base lg:text-lg ${className}`}
+      className={`text-gray text-sm font-normal text-[#909090] sm:text-base lg:text-lg ${className}`}
     >
       {children}
     </p>

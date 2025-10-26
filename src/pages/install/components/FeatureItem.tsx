@@ -10,7 +10,7 @@ const FeatureItem = ({ icon, title, children }: FeatureItemProps) => {
       <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4.5">
         <div className="flex items-center gap-2 sm:gap-4.5">
           {icon}
-          <p className="text-gray-blue text-lg font-semibold sm:text-xl lg:text-2xl">
+          <p className="text-lg font-semibold text-white sm:text-xl lg:text-2xl">
             {title}
           </p>
         </div>
