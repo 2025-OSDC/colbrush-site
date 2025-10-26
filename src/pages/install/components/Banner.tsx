@@ -6,7 +6,7 @@ import GradientBlinds from "../../../components/animations/GradientBlinds";
 const Banner = () => {
   return (
     <div className="relative flex h-96 w-full items-center justify-center md:h-115 lg:h-135">
-      <div className="absolute top-1/2 left-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 bg-[#060010] sm:w-[600px] md:w-[700px] lg:w-[805px]">
+      <div className="bg-bg absolute top-1/2 left-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 sm:w-[600px] md:w-[700px] lg:w-[805px]">
         <GradientBlinds
           gradientColors={["#FF9FFC", "#5227FF"]}
           angle={30}
