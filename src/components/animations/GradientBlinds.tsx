@@ -303,7 +303,6 @@ void main() {
     const ro = new ResizeObserver(resize);
     ro.observe(container);
 
-
     const loop = (t: number) => {
       rafRef.current = requestAnimationFrame(loop);
       uniforms.iTime.value = t * 0.001;

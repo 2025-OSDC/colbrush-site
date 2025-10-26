@@ -1,36 +1,46 @@
 interface TodoProps {
-  state: "시작 전" | "진행 중" | "완료",
-  title: string,
-  content: string,
-  number: number,
+  state: "시작 전" | "진행 중" | "완료";
+  title: string;
+  content: string;
+  number: number;
 }
 
-const Todo: React.FC<TodoProps> = ({
-  state,
-  title,
-  content,
-  number,
-}) => {
+const Todo: React.FC<TodoProps> = ({ state, title, content, number }) => {
+  const bgColor =
+    state === "시작 전"
+      ? `bg-purple/15`
+      : state === "진행 중"
+        ? `bg-yellow/15`
+        : `bg-light-green/15`;
 
-  const bgColor = 
-    state === "시작 전" ? `bg-purple/15` :
-    state === "진행 중" ? `bg-yellow/15` : `bg-light-green/15`
-
-  const textColor = 
-    state === "시작 전" ? `text-purple` :
-    state === "진행 중" ? `text-yellow` : `text-light-green`
+  const textColor =
+    state === "시작 전"
+      ? `text-purple`
+      : state === "진행 중"
+        ? `text-yellow`
+        : `text-light-green`;
 
   return (
-    <div className={`rounded-[16px] w-full px-5 py-4 flex flex-col items-start gap-2 bg-bg`}>
-      <div className={`text-[12px] max-lg:text-[10px] py-0.5 px-1.5 w-fit rounded-[4px] ${bgColor} ${textColor}`}>
+    <div
+      className={`bg-bg flex w-full flex-col items-start gap-2 rounded-[16px] px-5 py-4`}
+    >
+      <div
+        className={`w-fit rounded-[4px] px-1.5 py-0.5 text-[12px] max-lg:text-[10px] ${bgColor} ${textColor}`}
+      >
         {number}순위
       </div>
       <div className={`flex flex-col`}>
-        <p className={`lg:text-[18px] max-lg:text-[16px] text-start`}>{title}</p>
-        <p className={`text-[12px] max-lg:text-[10px] text-start text-[#787486]`}>{content}</p>
+        <p className={`text-start max-lg:text-[16px] lg:text-[18px]`}>
+          {title}
+        </p>
+        <p
+          className={`text-start text-[12px] text-[#787486] max-lg:text-[10px]`}
+        >
+          {content}
+        </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Todo;

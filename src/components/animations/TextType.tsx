@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { useEffect, useRef, useState } from 'react';
-import { gsap } from 'gsap';
+import { useEffect, useRef, useState } from "react";
+import { gsap } from "gsap";
 
 interface TextTypeProps {
   text: string;
@@ -13,12 +13,12 @@ interface TextTypeProps {
 
 const TextType = ({
   text,
-  className = '',
+  className = "",
   typingSpeed = 50,
   showCursor = true,
-  cursorCharacter = '|',
+  cursorCharacter = "|",
 }: TextTypeProps) => {
-  const [displayedText, setDisplayedText] = useState('');
+  const [displayedText, setDisplayedText] = useState("");
   const cursorRef = useRef<HTMLSpanElement>(null);
   const timelineRef = useRef<gsap.core.Timeline | null>(null);
 
@@ -30,7 +30,7 @@ const TextType = ({
         duration: 0.5,
         repeat: -1,
         yoyo: true,
-        ease: 'power2.inOut',
+        ease: "power2.inOut",
       });
     }
   }, [showCursor]);
@@ -42,7 +42,7 @@ const TextType = ({
     }
 
     const timeline = gsap.timeline();
-    const chars = text.split('');
+    const chars = text.split("");
 
     chars.forEach((_, index) => {
       timeline.to(
@@ -52,7 +52,7 @@ const TextType = ({
           onComplete: () => {
             setDisplayedText(text.substring(0, index + 1));
           },
-        }
+        },
       );
     });
 
