@@ -17,7 +17,7 @@ const Effect = () => {
         </h2>
 
         <div className="flex w-full flex-col items-center gap-7">
-          {/* Desktop: BEFORE/AFTER 레이블을 가로로 배치 */}
+          {/* Desktop */}
           <div className="hidden items-center gap-12 md:gap-20 lg:flex">
             <div className={labelClass}>
               <h3 className="text-center text-xl font-semibold text-white md:text-2xl">
@@ -40,10 +40,10 @@ const Effect = () => {
             </div>
           </div>
 
-          <div className="flex w-full flex-col items-stretch justify-center gap-6 lg:flex-row lg:gap-24">
+          <div className="flex w-full flex-col items-center justify-center gap-6 lg:flex-row lg:gap-24">
             {/* BEFORE 카드 */}
-            <div className="flex flex-col gap-4">
-              {/* Mobile/Tablet: 카드 위에 레이블 표시 */}
+            <div className="flex w-full max-w-md flex-col gap-4 lg:w-auto">
+              {/* Mobile/Tablet */}
               <div className={`${labelClass} lg:hidden`}>
                 <h3 className="text-center text-xl font-semibold text-white md:text-2xl">
                   {BEFORE.LABEL}
@@ -70,8 +70,8 @@ const Effect = () => {
             </div>
 
             {/* AFTER 카드 */}
-            <div className="flex flex-col gap-4">
-              {/* Mobile/Tablet: 카드 위에 레이블 표시 */}
+            <div className="flex w-full max-w-md flex-col gap-4 lg:w-auto">
+              {/* Mobile/Tablet */}
               <div className={`${labelClass} lg:hidden`}>
                 <h3 className="text-center text-xl font-semibold text-white md:text-2xl">
                   {AFTER.LABEL}
