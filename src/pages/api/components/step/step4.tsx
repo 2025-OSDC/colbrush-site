@@ -55,11 +55,11 @@ export default function Step4() {
         </ul>
         <ul className="list-inside list-disc">
           <SubTitle>React 연동 (Frontend)</SubTitle>
-          <Description className="py-2">
+          <Description className="py-3">
             테마 생성 후, <Code>{`colbrush/client`}</Code> 라이브러리를 사용해
             React 앱에서 쉽게 적용하고 전환할 수 있습니다.
           </Description>
-          <Bullet className="pb-2">
+          <Bullet className="pb-3">
             <Code>{`ThemeProvider`}</Code> 로 앱 감싸기
           </Bullet>
           <Bullet>
@@ -68,11 +68,11 @@ export default function Step4() {
         </ul>
         <ul className="list-inside list-disc">
           <SubTitle>에러 진단 및 도움말</SubTitle>
-          <Description>
+          <Description className="py-1">
             Colbrush는 문제 발생 시 상세한 에러 메시지와 해결 제안을 제공하여
             디버깅을 돕습니다.
           </Description>
-          <Bullet>
+          <Bullet className="pb-2">
             파일/변수 없음, CSS 파싱 오류, 권한 오류 등에 대해 명확한 안내를
             제공합니다.
           </Bullet>
