@@ -27,7 +27,7 @@ export default function Step2() {
             </Bullet>
             <Bullet>Props:</Bullet>
             <ul className="list-inside list-disc pl-6">
-              <Bullet>
+              <Bullet className="py-2">
                 <Code>options</Code> (선택 사항): 드롭다운에 표시될 테마 목록을
                 커스터마이징합니다.
               </Bullet>
