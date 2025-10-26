@@ -23,7 +23,7 @@ const Explanation = () => {
               INSTALL_CONSTANTS.CODES.TRITANOPIA,
             ].map((type, index, array) => (
               <span key={type}>
-                <Code className="text-black">{type}</Code>
+                <Code className="text-white">{type}</Code>
                 {index < array.length - 1 && " , "}
               </span>
             ))}
@@ -36,7 +36,7 @@ const Explanation = () => {
           title={INSTALL_CONSTANTS.EXPLANATION.AUTO_GENERATION.TITLE}
         >
           <Description className="leading-7 sm:leading-8">
-            <Code className="text-black">{INSTALL_CONSTANTS.CODES.THEME}</Code>
+            <Code className="text-white">{INSTALL_CONSTANTS.CODES.THEME}</Code>
             {INSTALL_CONSTANTS.EXPLANATION.AUTO_GENERATION.DESCRIPTION}
           </Description>
         </FeatureItem>
@@ -47,7 +47,7 @@ const Explanation = () => {
         >
           <Description className="leading-7 sm:leading-8">
             {INSTALL_CONSTANTS.EXPLANATION.THEME_PROVIDER.DESCRIPTION_PREFIX}
-            <Code className="text-black">
+            <Code className="text-white">
               {INSTALL_CONSTANTS.CODES.THEME_PROVIDER}
             </Code>
             {INSTALL_CONSTANTS.EXPLANATION.THEME_PROVIDER.DESCRIPTION_SUFFIX}

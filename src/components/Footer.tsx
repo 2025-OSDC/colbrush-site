@@ -8,15 +8,15 @@ export default function Footer() {
         <div className="flex w-full flex-col gap-4 sm:flex-row sm:items-end sm:justify-between sm:gap-0">
           <div className="flex flex-col gap-3 sm:gap-4 lg:gap-6">
             <div className="flex flex-col gap-1">
-              <p className="text-white text-xs font-normal sm:text-sm">
+              <p className="text-xs font-normal text-white sm:text-sm">
                 Developed by Team ColorBrush
               </p>
-              <p className="text-white text-xs font-normal sm:text-sm">
+              <p className="text-xs font-normal text-white sm:text-sm">
                 Contributors: 윤수호, 김연진, 윤혜성, 이준희, 노하영
               </p>
             </div>
 
-            <p className="text-gray-100 text-xs font-normal sm:text-sm">
+            <p className="text-xs font-normal text-gray-100 sm:text-sm">
               Copyright© 2025. colbrush. All rights reserved.
             </p>
           </div>

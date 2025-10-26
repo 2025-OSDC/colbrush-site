@@ -21,7 +21,6 @@ const data = [
 ];
 
 function LineChart() {
-
   const theme = useTheme().theme;
 
   const rootStyle = getComputedStyle(document.documentElement);
@@ -39,14 +38,16 @@ function LineChart() {
         paddingTop: 20,
         paddingBottom: 20,
         paddingLeft: 0,
-      })
+      }),
     );
 
-    chart?.get("colors")?.set("colors", [
-      am5.color(rootStyle.getPropertyValue('--color-blue')),
-      am5.color(rootStyle.getPropertyValue('--color-light-green')),
-      am5.color(rootStyle.getPropertyValue('--color-red')),
-    ]);
+    chart
+      ?.get("colors")
+      ?.set("colors", [
+        am5.color(rootStyle.getPropertyValue("--color-blue")),
+        am5.color(rootStyle.getPropertyValue("--color-light-green")),
+        am5.color(rootStyle.getPropertyValue("--color-red")),
+      ]);
 
     const xRenderer = am5xy.AxisRendererX.new(root, {
       minGridDistance: 40, // 틱 간격 조정
@@ -58,15 +59,15 @@ function LineChart() {
       centerX: 1,
       textAlign: "right",
       oversizedBehavior: "wrap", // 글자가 넘칠 경우 줄바꿈
-      fill: am5.color(rootStyle.getPropertyValue('--color-gray-100')),
-    })
+      fill: am5.color(rootStyle.getPropertyValue("--color-gray-100")),
+    });
 
     const xAxis = chart.xAxes.push(
       am5xy.CategoryAxis.new(root, {
         categoryField: "month",
         renderer: xRenderer,
         tooltip: am5.Tooltip.new(root, {}),
-      })
+      }),
     );
     xAxis.data.setAll(data);
 
@@ -77,13 +78,13 @@ function LineChart() {
     yRenderer.labels.template.setAll({
       fontFamily: "Pretendard Variable",
       fontSize: 12,
-      fill: am5.color(rootStyle.getPropertyValue('--color-gray-100')),
+      fill: am5.color(rootStyle.getPropertyValue("--color-gray-100")),
     });
 
     const yAxis = chart.yAxes.push(
       am5xy.ValueAxis.new(root, {
         renderer: yRenderer,
-      })
+      }),
     );
 
     function createSeries(name: string, field: string, colorIndex: number) {
@@ -98,7 +99,7 @@ function LineChart() {
           stroke: chart?.get("colors")?.getIndex(colorIndex),
           fill: chart?.get("colors")?.getIndex(colorIndex),
           tooltip: am5.Tooltip.new(root, { labelText: "{name}: {valueY}" }),
-        })
+        }),
       );
       series.data.setAll(data);
       series.strokes.template.setAll({ strokeWidth: 4 });
@@ -109,9 +110,7 @@ function LineChart() {
     createSeries("신규고객", "new", 2);
 
     chart.set("cursor", am5xy.XYCursor.new(root, {}));
-    chart.children.push(
-      am5.Legend.new(root, { centerX: am5.p50, x: am5.p50 })
-    );
+    chart.children.push(am5.Legend.new(root, { centerX: am5.p50, x: am5.p50 }));
 
     return () => {
       root.dispose();
@@ -120,11 +119,15 @@ function LineChart() {
 
   return (
     <GraphContainer className={`min-h-[300px]`}>
-      <p className={`lg:text-[18px] max-lg:text-[14px] text-start mb-4 text-gray-100`}>방문자 분석</p>
+      <p
+        className={`mb-4 text-start text-gray-100 max-lg:text-[14px] lg:text-[18px]`}
+      >
+        방문자 분석
+      </p>
       <div id="chartdiv" className={`w-full grow`} />
       <div></div>
     </GraphContainer>
-  )
+  );
 }
 
 export default LineChart;

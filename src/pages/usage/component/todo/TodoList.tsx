@@ -30,7 +30,9 @@ const TodoList: React.FC<TodoListProps> = ({ state, todos }) => {
           <div
             className={`rounded-full max-lg:h-1.5 max-lg:w-1.5 lg:h-2 lg:w-2 ${color}`}
           />
-          <p className={`text-start max-lg:text-[14px] lg:text-[16px] font-medium`}>
+          <p
+            className={`text-start font-medium max-lg:text-[14px] lg:text-[16px]`}
+          >
             {state}
           </p>
         </div>

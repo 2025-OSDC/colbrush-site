@@ -1,9 +1,9 @@
-import { useEffect, useRef } from 'react';
-import * as am5 from '@amcharts/amcharts5';
-import * as am5percent from '@amcharts/amcharts5/percent';
-import am5themes_Animated from '@amcharts/amcharts5/themes/Animated';
-import { useTheme } from 'colbrush/client';
-import GraphContainer from './GraphContainer';
+import { useEffect, useRef } from "react";
+import * as am5 from "@amcharts/amcharts5";
+import * as am5percent from "@amcharts/amcharts5/percent";
+import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
+import { useTheme } from "colbrush/client";
+import GraphContainer from "./GraphContainer";
 
 interface ChartData {
   category: string;
@@ -12,22 +12,32 @@ interface ChartData {
 }
 
 const DonutChart = () => {
-
   const theme = useTheme().theme;
 
   const rootStyle = getComputedStyle(document.documentElement);
 
   const data = [
-    { category: "잠재 고객", value: 54, color: rootStyle.getPropertyValue('--color-blue').trim() },
-    { category: "충성 고객", value: 20, color: rootStyle.getPropertyValue('--color-light-green').trim() },
-    { category: "신규 고객", value: 26, color: rootStyle.getPropertyValue('--color-red').trim() }
-  ]
+    {
+      category: "잠재 고객",
+      value: 54,
+      color: rootStyle.getPropertyValue("--color-blue").trim(),
+    },
+    {
+      category: "충성 고객",
+      value: 20,
+      color: rootStyle.getPropertyValue("--color-light-green").trim(),
+    },
+    {
+      category: "신규 고객",
+      value: 26,
+      color: rootStyle.getPropertyValue("--color-red").trim(),
+    },
+  ];
 
   const chartRef = useRef<HTMLDivElement | null>(null);
   const rootRef = useRef<am5.Root | null>(null);
 
   useEffect(() => {
-
     if (!chartRef.current) return;
     // amCharts 루트 생성
     const root = am5.Root.new(chartRef.current);
@@ -40,8 +50,8 @@ const DonutChart = () => {
     const chart = root.container.children.push(
       am5percent.PieChart.new(root, {
         layout: root.verticalLayout,
-        innerRadius: am5.percent(60) // 도넛 모양
-      })
+        innerRadius: am5.percent(60), // 도넛 모양
+      }),
     );
 
     // 시리즈 생성
@@ -49,8 +59,8 @@ const DonutChart = () => {
       am5percent.PieSeries.new(root, {
         valueField: "value",
         categoryField: "category",
-        alignLabels: false
-      })
+        alignLabels: false,
+      }),
     );
 
     // 라벨과 틱 숨기기
@@ -65,23 +75,23 @@ const DonutChart = () => {
 
     // 호버 효과
     series.slices.template.states.create("hover", {
-      scale: 1.05
+      scale: 1.05,
     });
 
     // 색상 적용
     series.slices.template.adapters.add("fill", function (fill, target) {
       const dataItem = target.dataItem;
       if (dataItem) {
-        const context = dataItem.dataContext as ChartData
+        const context = dataItem.dataContext as ChartData;
         return am5.color(context.color);
       }
       return fill;
     });
-    
+
     series.slices.template.adapters.add("stroke", function (stroke, target) {
       const dataItem = target.dataItem;
       if (dataItem) {
-        const context = dataItem.dataContext as ChartData
+        const context = dataItem.dataContext as ChartData;
         return am5.color(context.color);
       }
       return stroke;
@@ -103,29 +113,35 @@ const DonutChart = () => {
 
   return (
     <GraphContainer>
-      <div className={`flex flex-row items-center justify-between mb-4`}>
-        <p className={`lg:text-[18px] max-lg:text-[14px] font-bold text-gray-100 text-center`}>
+      <div className={`mb-4 flex flex-row items-center justify-between`}>
+        <p
+          className={`text-center font-bold text-gray-100 max-lg:text-[14px] lg:text-[18px]`}
+        >
           방문자 분석
         </p>
-        <p className={`text-[12px] max-lg:text-[10px] rounded-[4px] bg-gray-200 px-2 py-1 text-gray-100`}>Today</p>
+        <p
+          className={`rounded-[4px] bg-gray-200 px-2 py-1 text-[12px] text-gray-100 max-lg:text-[10px]`}
+        >
+          Today
+        </p>
       </div>
 
       <div className={`flex items-center justify-center`}>
         <div
           ref={chartRef}
-          className="md:w-full max-h-[300px] aspect-[5/4] mb-2 max-md:w-[50%]"
+          className="mb-2 aspect-[5/4] max-h-[300px] max-md:w-[50%] md:w-full"
         />
       </div>
 
-      <div className="text-[16px] max-lg:text-[14px] p-2">
-        <div className="flex justify-center gap-4 flex-col">
+      <div className="p-2 text-[16px] max-lg:text-[14px]">
+        <div className="flex flex-col justify-center gap-4">
           {data.map((item, index) => (
             <div key={index} className="flex items-center gap-2">
               <div
-                className="w-3 h-3 max-lg:w-2.5 max-lg:h-2.5 rounded-full shrink-0"
+                className="h-3 w-3 shrink-0 rounded-full max-lg:h-2.5 max-lg:w-2.5"
                 style={{ backgroundColor: item.color }}
               />
-              <span className="text-white font-light w-full flex flex-row justify-between items-center">
+              <span className="flex w-full flex-row items-center justify-between font-light text-white">
                 <p>{item.category}</p>
                 <p>{item.value}%</p>
               </span>

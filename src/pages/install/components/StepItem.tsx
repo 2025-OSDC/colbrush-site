@@ -11,7 +11,7 @@ const StepItem = ({ chip, title, children }: StepItemProps) => {
     <div className="flex flex-col">
       <div className="mb-3 flex flex-col gap-2 sm:mb-4 sm:flex-row sm:items-center sm:gap-4 lg:mb-5">
         <Chip>{chip}</Chip>
-        <p className="text-gray-blue text-lg font-semibold sm:text-xl lg:text-2xl">
+        <p className="text-lg font-semibold text-white sm:text-xl lg:text-2xl">
           {title}
         </p>
       </div>
