@@ -27,10 +27,12 @@ export default function Step4() {
           <div className="overflow-x-scroll md:overflow-x-scroll">
             <ExplaneCommandTable></ExplaneCommandTable>
           </div>
+          <br />
           <Bullet className="pt-2">옵션</Bullet>
           <div className="flex w-full overflow-x-scroll md:overflow-x-hidden">
             <ExplaneOptionTable></ExplaneOptionTable>
           </div>
+          <br />
           <Bullet className="pt-2">사용 예시</Bullet>
           <CodeBlock code={USE_EXAMPLE} />
         </ul>
@@ -43,6 +45,7 @@ export default function Step4() {
           </Description>
           <Bullet>입력(CSS):</Bullet>
           <CodeBlock code={INPUT_CSS_EXAMPLE}></CodeBlock>
+          <br />
           <Bullet>
             <span className="font-semibold">출력 (CSS에 자동 추가):</span>{" "}
             생성된 테마는 지정된 CSS 파일 끝에 데이터 속성 선택자 형태로
@@ -56,12 +59,12 @@ export default function Step4() {
             테마 생성 후, <Code>{`colbrush/client`}</Code> 라이브러리를 사용해
             React 앱에서 쉽게 적용하고 전환할 수 있습니다.
           </Description>
-          <Description>
+          <Bullet>
             <Code>{`ThemeProvider`}</Code> 로 앱 감싸기
-          </Description>
-          <Description>
+          </Bullet>
+          <Bullet>
             <Code>{`ThemeSwitcher`}</Code> 컴포넌트로 테마 변경 스위치 추가
-          </Description>
+          </Bullet>
         </ul>
         <ul className="list-inside list-disc">
           <SubTitle>에러 진단 및 도움말</SubTitle>
