@@ -15,23 +15,23 @@ export default function Step2() {
           있습니다.
         </Description>
       </div>
-      <div className="flex flex-col gap-10">
-        <div className="space-y-2 sm:space-y-3">
+      <div className="flex flex-col gap-7 sm:gap-10">
+        <div className="space-y-1 sm:space-y-3">
           <SubTitle>
             <Code className="text-lg font-medium sm:text-xl lg:text-[24px]">{`<ThemeProvider>`}</Code>
           </SubTitle>
-          <ul className="list-inside list-disc leading-7 sm:leading-8">
+          <ul className="list-inside list-disc leading-4 sm:leading-8">
             <Bullet>
               <span className="font-semibold">설명: </span> 애플리케이션에 테마
               기능을 전역적으로 제공하는 Context Provider입니다.
             </Bullet>
             <Bullet>Props:</Bullet>
             <ul className="list-inside list-disc pl-6">
-              <Bullet className="py-1">
+              <Bullet>
                 <Code>options</Code> (선택 사항): 드롭다운에 표시될 테마 목록을
                 커스터마이징합니다.
               </Bullet>
-              <Bullet className="py-1">
+              <Bullet>
                 <Code>position</Code> (선택 사항): ThemeSwitcher를 띄울 위치를
                 선정합니다.
                 <br />
@@ -46,11 +46,11 @@ export default function Step2() {
             <CodeBlock code={THEMEPROVIDER}></CodeBlock>
           </ul>
         </div>
-        <div className="space-y-2 sm:space-y-3">
+        <div className="space-y-1 sm:space-y-3">
           <SubTitle>
             <Code className="text-lg font-medium sm:text-xl lg:text-[24px]">{`<ThemeSwitcher>`}</Code>
           </SubTitle>
-          <ul className="list-inside list-disc leading-7 sm:leading-8">
+          <ul className="list-inside list-disc leading-4 sm:leading-8">
             <Bullet>
               <span className="font-semibold">설명:</span> 사용자가 테마를 쉽게
               변경할 수 있는 드롭다운 UI 컴포넌트입니다.
@@ -66,7 +66,7 @@ export default function Step2() {
           <SubTitle>
             <Code className="text-lg font-medium sm:text-xl lg:text-[24px]">{`<SimulationFilter>`}</Code>
           </SubTitle>
-          <ul className="list-inside list-disc leading-7 sm:leading-8">
+          <ul className="list-inside list-disc leading-4 sm:leading-8">
             <Bullet>
               <span className="font-semibold">설명:</span>시뮬레이션 결과를
               조건별로 필터링할 수 있는 UI 컴포넌트입니다.

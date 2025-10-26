@@ -14,8 +14,8 @@ import { GradientTitle } from "../gradientTitle";
 export default function Step1() {
   const sectionStyle = "flex flex-col gap-[12px]";
   return (
-    <section className="flex flex-col gap-3 sm:gap-10">
-      <div className="gap-0">
+    <section className="flex flex-col gap-7 sm:gap-10">
+      <div>
         <GradientTitle>1. 시작하기 (Get Started)</GradientTitle>
         <Description>
           이 섹션은 Colbrush의 설치부터 기본적인 사용법까지 안내합니다.
