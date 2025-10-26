@@ -8,7 +8,7 @@ const Button = ({ children, className = "", onClick }: ButtonProps) => {
   return (
     <button
       onClick={onClick}
-      className={`h-9 w-44 cursor-pointer items-center justify-center rounded-md bg-black text-sm font-normal text-white ${className}`}
+      className={`h-11 w-44 cursor-pointer items-center justify-center bg-black border border-[#8144ff] shadow-[0px_0px_1px_0px_rgba(0,0,0,0.25)] rounded-[30px] text-sm font-medium text-white ${className}`}
     >
       {children}
     </button>

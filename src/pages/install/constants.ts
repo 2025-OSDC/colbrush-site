@@ -5,7 +5,14 @@ export const INSTALL_CONSTANTS = {
 
   // Banner
   BANNER: {
-    DESCRIPTION: "색각 이상자도 구분 가능한 UI 테마\n단 한 줄로 적용하세요",
+    DESCRIPTION: "코드 한 줄로 적용하는\n색각 이상자를 위한 UI 테마 스위칭",
+  },
+
+  // Suggestion
+  SUGGESTION: {
+    DESCRIPTION:
+      "Colbrush는 단 한 줄의 코드로 색각 보정 테마를 자동 생성합니다.\n웹 접근성 작업을 획기적으로 단축하세요.",
+    COMMAND: "npx colbrush --generate --css=./src/styles/brand-palette.css"
   },
 
   // Explanation
