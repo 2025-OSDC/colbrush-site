@@ -39,8 +39,8 @@ export const WindowIcon = memo<IconProps>(
             y2="10"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#884DFF" />
-            <stop offset="1" stop-color="#C89AE8" />
+            <stop stopColor="#884DFF" />
+            <stop offset="1" stopColor="#C89AE8" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_743_3357"
@@ -50,8 +50,8 @@ export const WindowIcon = memo<IconProps>(
             y2="37.5"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#884DFF" />
-            <stop offset="1" stop-color="#C89AE8" />
+            <stop stopColor="#884DFF" />
+            <stop offset="1" stopColor="#C89AE8" />
           </linearGradient>
         </defs>
       </svg>

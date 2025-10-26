@@ -27,8 +27,8 @@ export const PeopleIcon = memo<PeopleIconProps>(
           fill="url(#paint0_linear_745_1989)"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M13.04 35.0011C12.6694 34.2206 12.4846 33.3649 12.5 32.5011C12.5 29.1136 14.2 25.6261 17.34 23.2011C15.7727 22.7182 14.1399 22.482 12.5 22.5011C2.5 22.5011 0 30.0011 0 32.5011C0 35.0011 2.5 35.0011 2.5 35.0011H13.04Z"
           fill="url(#paint1_linear_745_1989)"
         />
@@ -45,8 +45,8 @@ export const PeopleIcon = memo<PeopleIconProps>(
             y2="35"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#884DFF" />
-            <stop offset="1" stop-color="#C89AE8" />
+            <stop stopColor="#884DFF" />
+            <stop offset="1" stopColor="#C89AE8" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_745_1989"
@@ -56,8 +56,8 @@ export const PeopleIcon = memo<PeopleIconProps>(
             y2="35.0011"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#884DFF" />
-            <stop offset="1" stop-color="#C89AE8" />
+            <stop stopColor="#884DFF" />
+            <stop offset="1" stopColor="#C89AE8" />
           </linearGradient>
           <linearGradient
             id="paint2_linear_745_1989"
@@ -67,8 +67,8 @@ export const PeopleIcon = memo<PeopleIconProps>(
             y2="20"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#884DFF" />
-            <stop offset="1" stop-color="#C89AE8" />
+            <stop stopColor="#884DFF" />
+            <stop offset="1" stopColor="#C89AE8" />
           </linearGradient>
         </defs>
       </svg>

@@ -35,8 +35,8 @@ export const MagicIcon = memo<MasicIconProps>(
             y2="38.7554"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#8144FF" />
-            <stop offset="1" stop-color="#C89AE8" />
+            <stop stopColor="#8144FF" />
+            <stop offset="1" stopColor="#C89AE8" />
           </linearGradient>
         </defs>
       </svg>
