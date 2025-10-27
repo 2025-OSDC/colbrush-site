@@ -9,4 +9,4 @@ export const navItems: NavItem[] = [
   { path: "/api", label: "API", name: "api" },
 ];
 
-export const GITHUB_URL = "https://www.npmjs.com/package/colbrush";
+export const GITHUB_URL = "https://github.com/2025-OSDC/colbrush";
