@@ -25,21 +25,6 @@ export default function Step2() {
               <span className="font-semibold">설명: </span> 애플리케이션에 테마
               기능을 전역적으로 제공하는 Context Provider입니다.
             </Bullet>
-            <Bullet>Props:</Bullet>
-            <ul className="list-inside list-disc pl-6">
-              <Bullet className="py-2">
-                <Code>options</Code> (선택 사항): 드롭다운에 표시될 테마 목록을
-                커스터마이징합니다.
-              </Bullet>
-              <Bullet>
-                <Code>position</Code> (선택 사항): ThemeSwitcher를 띄울 위치를
-                선정합니다.
-                <br />
-                &thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;('left-bottom',
-                ‘right-bottom’, 'left-top’, 'right-top' 중 선택 가능. default:
-                right-bottom)
-              </Bullet>
-            </ul>
             <Bullet>
               <span className="font-semibold">사용 예시:</span>
             </Bullet>
@@ -57,9 +42,21 @@ export default function Step2() {
             </Bullet>
             <Bullet className="py-1">
               <span className="font-semibold">Props:&thinsp;&thinsp;</span>
-              <Code>options</Code>&thinsp;(선택 사항): 드롭다운에 표시될 테마
-              목록을 커스터마이징합니다.
             </Bullet>
+            <ul className="list-inside list-disc pl-6">
+              <Bullet className="py-2">
+                <Code>options</Code> (선택 사항): 드롭다운에 표시될 테마 목록을
+                커스터마이징합니다.
+              </Bullet>
+              <Bullet>
+                <Code>position</Code> (선택 사항): ThemeSwitcher를 띄울 위치를
+                선정합니다.
+                <br />
+                &thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;('left-bottom',
+                ‘right-bottom’, 'left-top’, 'right-top' 중 선택 가능. default:
+                right-bottom)
+              </Bullet>
+            </ul>
           </ul>
         </div>
         <div className="space-y-2 sm:space-y-3">
