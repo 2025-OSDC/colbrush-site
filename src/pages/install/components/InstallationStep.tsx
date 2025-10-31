@@ -53,12 +53,12 @@ const InstallationStep = () => {
                 <span className="text-white"> {`{`}</span>
               </div>
               <div className="text-sm font-normal sm:text-base lg:text-lg">
-                <span className="text-pink-600">
+                <span className="text-pink">
                   {" "}
                   {INSTALL_CONSTANTS.INSTALLATION.STEP2.CSS_VARIABLES.PRIMARY}
                 </span>
                 <span className="text-white">: </span>
-                <span className="text-pink-600">
+                <span className="text-pink">
                   {
                     INSTALL_CONSTANTS.INSTALLATION.STEP2.CSS_VARIABLES
                       .PRIMARY_VALUE
@@ -67,12 +67,12 @@ const InstallationStep = () => {
                 <span className="text-white">;</span>
               </div>
               <div className="text-sm font-normal sm:text-base lg:text-lg">
-                <span className="text-pink-600">
+                <span className="text-pink">
                   {" "}
                   {INSTALL_CONSTANTS.INSTALLATION.STEP2.CSS_VARIABLES.SECONDARY}
                 </span>
                 <span className="text-white">: </span>
-                <span className="text-pink-600">
+                <span className="text-pink">
                   {
                     INSTALL_CONSTANTS.INSTALLATION.STEP2.CSS_VARIABLES
                       .SECONDARY_VALUE
@@ -81,12 +81,12 @@ const InstallationStep = () => {
                 <span className="text-white">;</span>
               </div>
               <div className="text-sm font-normal sm:text-base lg:text-lg">
-                <span className="text-pink-600">
+                <span className="text-pink">
                   {" "}
                   {INSTALL_CONSTANTS.INSTALLATION.STEP2.CSS_VARIABLES.GRAY}
                 </span>
                 <span className="text-white">: </span>
-                <span className="text-pink-600">
+                <span className="text-pink">
                   {
                     INSTALL_CONSTANTS.INSTALLATION.STEP2.CSS_VARIABLES
                       .GRAY_VALUE

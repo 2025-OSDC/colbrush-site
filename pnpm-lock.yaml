@@ -21,8 +21,8 @@ importers:
         specifier: ^4.1.12
         version: 4.1.12(vite@7.1.3(jiti@2.5.1)(lightningcss@1.30.1))
       colbrush:
-        specifier: ^1.12.0
-        version: 1.12.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+        specifier: ^1.16.1
+        version: 1.16.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       gsap:
         specifier: ^3.13.0
         version: 3.13.0
@@ -1125,8 +1125,8 @@ packages:
     resolution: {integrity: sha512-JQHZ2QMW6l3aH/j6xCqQThY/9OH4D/9ls34cgkUBiEeocRTU04tHfKPBsUK1PqZCUQM7GiA0IIXJSuXHI64Kbg==}
     engines: {node: '>=0.8'}
 
-  colbrush@1.12.0:
-    resolution: {integrity: sha512-tIhCu3HzqH5x8xD6ezsab5+FkdYPuitYvWrAqiNExpQKTG8ULAIlSbYdx8KI8vzm4Oxys8lBj3TSlw1UJ+UlTg==}
+  colbrush@1.16.1:
+    resolution: {integrity: sha512-LKrmKv/cxlgOnDaT4sR3sz85QcbREYs/f5C5h7eaV8gzlw7RbOiaxov4UP5Ip6Ew89uCL3pUN3MMeHv6NGaV0Q==}
     hasBin: true
     peerDependencies:
       react: '>=17'
@@ -3637,7 +3637,7 @@ snapshots:
 
   clone@1.0.4: {}
 
-  colbrush@1.12.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
+  colbrush@1.16.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
     dependencies:
       chokidar: 3.6.0
       chroma-js: 3.1.2
