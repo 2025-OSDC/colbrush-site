@@ -26,8 +26,8 @@ const Suggestion = () => {
       </p>
 
       <div className="mt-8 inline-flex w-full max-w-[90%] flex-col items-start justify-start md:mt-13 md:max-w-[766.40px]">
-        <div className="inline-flex items-center justify-between self-stretch overflow-hidden rounded-tl-lg rounded-tr-lg bg-[#555555] px-3 py-2 md:px-4">
-          <div className="justify-start text-xs font-normal text-[#B4B4B4] md:text-sm">
+        <div className="inline-flex items-center justify-between self-stretch overflow-hidden rounded-tl-lg rounded-tr-lg bg-gray-200 px-3 py-2 md:px-4">
+          <div className="justify-start text-xs font-normal text-gray-50 md:text-sm">
             Bash
           </div>
           <button
@@ -37,7 +37,7 @@ const Suggestion = () => {
             <div className="relative h-4 w-4 overflow-hidden">
               <CopyIcon />
             </div>
-            <div className="justify-start text-xs font-normal text-zinc-400 md:text-sm">
+            <div className="justify-start text-xs font-normal text-gray-50 md:text-sm">
               Copy code
             </div>
           </button>
