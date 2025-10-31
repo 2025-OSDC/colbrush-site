@@ -15,12 +15,22 @@ export default function Header() {
     >
       <div className="flex h-14 w-full items-center justify-between px-4 sm:h-16 sm:px-8 lg:px-24">
         <div className="flex items-center">
-          <Link to="/" className="flex items-center gap-1.5 sm:gap-2">
-            <Logo width={28} height={28} className="sm:h-8 sm:w-8" />
+          <Link
+            to="/"
+            className="flex items-center gap-1.5 sm:gap-2"
+            aria-label="Colbrush 홈으로 이동"
+          >
+            <Logo
+              width={28}
+              height={28}
+              className="sm:h-8 sm:w-8"
+              aria-hidden="true"
+            />
             <LogoText
               width={80}
               height={24}
               className="sm:h-[30px] sm:w-[100px]"
+              aria-hidden="true"
             />
           </Link>
         </div>
