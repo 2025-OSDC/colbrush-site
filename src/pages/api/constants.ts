@@ -6,6 +6,8 @@ export const GENERATE_THEME_COMMAND =
   "npx colbrush generate --css=src/index.css";
 export const THEMEPROVIDER_SETTING =
   "import { ThemeProvider } from 'colbrush/client';\n\nexport default function App() {\n  return (\n    <ThemeProvider>\n      <YourApp />\n    </ThemeProvider>\n  );\n}";
+export const CSR_THEMESCRIPT_SETTING =
+  "<head>\n  <script>\n    try {\n      var t = localStorage.getItem('colbrush-theme');\n      if (['default', 'protanopia', 'deuteranopia', 'tritanopia'].indexOf(t) > -1) {\n        document.documentElement.setAttribute('data-theme', t);\n      }\n    } catch (e) {}\n  </script>\n</head>";
 export const THEMESCRIPT_SETTING =
   "import { ThemeProvider, ThemeScript } from 'colbrush/client';\n\nexport default function RootLayout({ children }) {\n  return (\n    <html>\n      <head>\n        <ThemeScript />\n      </head>\n      <body>\n        <ThemeProvider>{children}</ThemeProvider>\n      </body>\n    </html>\n  );\n}";
 export const STYLESCSS_IMPORT = "// index.css\n@import 'colbrush/styles.css';";

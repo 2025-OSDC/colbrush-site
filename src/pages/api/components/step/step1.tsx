@@ -1,5 +1,6 @@
 import CodeBlock from "../../../../components/defaultCodeBlock/DefaultCodeBlock";
 import {
+  CSR_THEMESCRIPT_SETTING,
   GENERATE_THEME_COMMAND,
   INSTALL_COMMAND,
   STYLESCSS_IMPORT,
@@ -49,6 +50,18 @@ export default function Step1() {
           </Description>
         </div>
         <CodeBlock code={THEMEPROVIDER_SETTING} language="ts"></CodeBlock>
+      </div>
+      <div className={sectionStyle}>
+        <div>
+          <SubTitle>CSR에서 테마 깜빡임 강제 방지</SubTitle>
+          <Description className="leading-7 sm:leading-8">
+            Vite 같은 CSR 앱에서는 보통 <Code>ThemeProvider</Code> 만으로 충분합니다.
+            그래도 JavaScript 번들 로드 전 깜빡임을 막고 싶다면{" "}
+            <Code>index.html</Code> 의 <Code>{`<head>`}</Code> 에 초기 테마
+            스크립트를 직접 추가합니다.
+          </Description>
+        </div>
+        <CodeBlock code={CSR_THEMESCRIPT_SETTING} language="html"></CodeBlock>
       </div>
       <div className={sectionStyle}>
         <div>
