@@ -1,6 +1,6 @@
 import Code from "../../../../components/code";
 import CodeBlock from "../../../../components/defaultCodeBlock/DefaultCodeBlock";
-import { THEMEPROVIDER } from "../../constants";
+import { SIMULATION_FILTER, THEMEPROVIDER } from "../../constants";
 import Description from "../../../../components/description";
 import SubTitle from "../subTitle";
 import Bullet from "../bullet";
@@ -40,6 +40,10 @@ export default function Step2() {
               <span className="font-semibold">설명:</span> 사용자가 테마를 쉽게
               변경할 수 있는 드롭다운 UI 컴포넌트입니다.
             </Bullet>
+            <Bullet>
+              <span className="font-semibold">import:</span>{" "}
+              <Code>{`import { ThemeSwitcher } from 'colbrush/client';`}</Code>
+            </Bullet>
             <Bullet className="py-1">
               <span className="font-semibold">Props:&thinsp;&thinsp;</span>
             </Bullet>
@@ -65,9 +69,17 @@ export default function Step2() {
           </SubTitle>
           <ul className="list-inside list-disc leading-4 sm:leading-8">
             <Bullet>
-              <span className="font-semibold">설명:</span>시뮬레이션 결과를
-              조건별로 필터링할 수 있는 UI 컴포넌트입니다.
+              <span className="font-semibold">설명:</span> 색각 이상 시뮬레이션
+              필터를 개발 환경에서 확인할 수 있는 devtools 컴포넌트입니다.
             </Bullet>
+            <Bullet>
+              <span className="font-semibold">import:</span>{" "}
+              <Code>{`import { SimulationFilter } from 'colbrush/devtools';`}</Code>
+            </Bullet>
+            <Bullet>
+              <span className="font-semibold">사용 예시:</span>
+            </Bullet>
+            <CodeBlock code={SIMULATION_FILTER}></CodeBlock>
             <Bullet className="py-1">
               <span className="font-semibold">Props:&thinsp;&thinsp;</span>
               <ul className="list-inside list-disc pl-6">
@@ -84,7 +96,7 @@ export default function Step2() {
                 </Bullet>
                 <Bullet className="py-1">
                   <Code>devHostPattern</Code> (선택 사항): 개발 호스트 정규식
-                  커스터마이징 (default: localhost / 127 / 192.168.x)
+                  커스터마이징 (RegExp, default: localhost / 127 / 192.168.x)
                 </Bullet>
                 <Bullet className="py-1">
                   <Code>position</Code> (선택 사항): toolbar를 띄울 위치를
@@ -97,6 +109,10 @@ export default function Step2() {
                 <Bullet className="py-1">
                   <Code>allowInProd</Code> (선택 사항): 프로덕션에서도 강제로
                   허용(디버깅용) default값: false
+                </Bullet>
+                <Bullet className="py-1">
+                  <Code>visible</Code> (선택 사항): 필터 UI 렌더링 여부를
+                  제어합니다. default값: true
                 </Bullet>
               </ul>
             </Bullet>

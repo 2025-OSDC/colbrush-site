@@ -19,7 +19,16 @@ export function ExplaneCommandTable() {
       <tbody>
         <tr className={trStyle}>
           <td className={tdStyle1}>
-            <Code>colbrush --generate</Code>
+            <Code>colbrush</Code>
+          </td>
+          <td className={tdStyle2}>
+            기본 파일(src/index.css)에 색각 이상자를 위한 접근성 테마를
+            생성합니다.
+          </td>
+        </tr>
+        <tr className={trStyle}>
+          <td className={tdStyle1}>
+            <Code>colbrush generate</Code>
           </td>
           <td className={tdStyle2}>
             색각 이상자를 위한 접근성 테마를 생성합니다. (기본 명령어)
@@ -46,7 +55,7 @@ export function ExplaneCommandTable() {
             <Code>colbrush --version</Code>
           </td>
           <td className={tdStyle2}>
-            현재 설치된 Colbrush의 버전 정보 (v1.6.0)를 표시합니다.
+            현재 설치된 Colbrush의 버전 정보를 표시합니다.
           </td>
         </tr>
       </tbody>

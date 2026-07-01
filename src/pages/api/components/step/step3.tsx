@@ -32,7 +32,7 @@ export default function Step3() {
               함수.
             </Bullet>
             <Bullet className="py-1">
-              <Code>language</Code> : 현재 적용된 테마의 이름(문자열)
+              <Code>language</Code> : 현재 적용된 언어 값(English / Korean)
             </Bullet>
             <Bullet className="py-1">
               <Code>updateLanguage</Code> :{" "}

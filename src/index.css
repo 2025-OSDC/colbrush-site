@@ -21,25 +21,25 @@
   --color-gray-100: #909090;
   --color-gray-200: #555555;
   --color-gray-300: #252525;
-
+  
   --color-protanopia-a: #a34245;
   --color-protanopia-b: #7e464a;
   --color-protanopia-sub-a: #275841;
   --color-protanopia-sub-b: #455c4e;
   --color-protanopia-sub-c: #525856;
-
+  
   --color-deuteranopia-a: #11724d;
   --color-deuteranopia-b: #5a7d6e;
   --color-deuteranopia-sub-a: #b84f47;
   --color-deuteranopia-sub-b: #a04d4d;
   --color-deuteranopia-sub-c: #6b6363;
-
+  
   --color-tritanopia-a: #7287e4;
   --color-tritanopia-b: #627cac;
   --color-tritanopia-sub-a: #5ba192;
   --color-tritanopia-sub-b: #4da08b;
   --color-tritanopia-sub-c: #4c7e71;
-
+  
   --color-red: #ff2727;
   --color-deep-red: #cf1e25;
   --color-yellow: #ffb720;
@@ -50,13 +50,13 @@
   --color-deep-blue: #00549f;
   --color-purple: #884dff;
   --color-pink: #e63395;
-
+  
   --shadow-custom: 0 0 6px 0 rgba(0, 0, 0, 0.25);
-
+  
   --font-pretendard: "Pretendard Variable";
 }
 
-[data-theme="deuteranopia"] {
+[data-theme='deuteranopia'] {
   --color-bg: #0d0003;
   --color-primary: #d22959;
   --color-secondary: #ea9694;
@@ -90,7 +90,7 @@
   --color-pink: #f92700;
 }
 
-[data-theme="protanopia"] {
+[data-theme='protanopia'] {
   --color-bg: #0d0003;
   --color-primary: #d22959;
   --color-secondary: #ea9694;
@@ -124,7 +124,7 @@
   --color-pink: #f92700;
 }
 
-[data-theme="tritanopia"] {
+[data-theme='tritanopia'] {
   --color-bg: #100010;
   --color-primary: #ed00ff;
   --color-secondary: #f384e9;
